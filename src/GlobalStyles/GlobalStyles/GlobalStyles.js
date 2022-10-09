@@ -85,7 +85,7 @@ const UserCardInformationContainer = chakra(Flex, {
         width: ['100%', '100%', '70%', '70%', '70%', ],
         flexDirection: 'row',
         borderColor: 'gray',
-        borderRightWidth: '0.5px',
+        borderRightWidth: ['0px','0px','0.5px','0.5px','0.5px',],
         margin: '0.5rem',
     },
 });
@@ -159,6 +159,35 @@ const UserReview = chakra(Text, {
         lineHeight: '1.3rem',
         fontSize: ['0.9rem','0.9rem','0.9rem','1.1rem','1.1rem',],
         marginInline: '0.2rem',
+        noOfLines: 1,
+    },
+});
+
+const UserValue = chakra(Text, {
+    baseStyle: {
+        color: 'black',
+        lineHeight: '1.3rem',
+        fontSize: ['0.9rem','0.9rem','0.9rem','1.1rem','1.1rem',],
+        noOfLines: 1,
+    },
+});
+
+const UserBio = chakra(Text, {
+    baseStyle: {
+        color: 'black',
+        lineHeight: '1.5rem',
+        fontSize: ['0.7rem','0.8rem','0.8rem','1rem','1rem',],
+        marginInline: '1rem',
+        noOfLines: [3,3,2,2,2,],
+    },
+});
+
+const UserCapsulText = chakra(Text, {
+    baseStyle: {
+        color: 'black',
+        lineHeight: '1.5rem',
+        fontSize: ['0.7rem','0.8rem','0.8rem','0.8rem','0.8rem',],
+        marginInline: '0.3rem',
     },
 });
 
@@ -169,10 +198,56 @@ const UserReviewContainer = chakra(Flex, {
     },
 });
 
+const UserValueContainer = chakra(Flex, {
+    baseStyle: {
+        width: '100%',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginTop: '1rem',
+
+    },
+});
+
+const UserSingleValueContainer = chakra(Flex, {
+    baseStyle: {
+        width: '33.3%',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+});
+
+
+const UserDepartmentContainer = chakra(Flex, {
+    baseStyle: {
+        width: '100%',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        marginInline: '1rem',
+        marginY: '0.8rem',
+        flexWrap: 'wrap',
+    },
+});
+
+const UserDepartmentCapsul = chakra(Flex, {
+    baseStyle: {
+        width: 'fit-content',
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginRight: '0.5rem',
+        marginBottom: '0.5rem',
+        borderRadius: 'full',
+        borderColor: 'black',
+        borderWidth: '0.5px',
+        paddingInline: '0.5rem',
+        flexWrap: 'wrap',
+    },
+});
+
 
 
 
 export default { NavBarText, FlexFull, PageContainer, HomePageContainer, HomePageOptionContainer, HomePageCardContainer,
     UserCardContainer, UserCardInformationContainer, UserCardActionContainer, UserAvatarContainer, UserPersonalInfoContainer,
-    UserFollowIconContainer, UserName, UserVrctName, UserDepartment, UserReviewContainer, UserReview,
+    UserFollowIconContainer, UserName, UserVrctName, UserDepartment, UserReviewContainer, UserReview, UserValueContainer,
+    UserSingleValueContainer, UserValue, UserBio, UserDepartmentContainer, UserDepartmentCapsul, UserCapsulText
 } ;
