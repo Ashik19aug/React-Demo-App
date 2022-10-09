@@ -2,7 +2,6 @@ import logo from './logo.svg';
 import './App.css';
 import {ChakraProvider, Text} from '@chakra-ui/react'
 import {Home} from "./Page";
-import {GlobalStyle} from "./GlobalStyles";
 import {NavBar} from "./Container";
 
 function App() {

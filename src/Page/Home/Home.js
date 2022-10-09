@@ -1,13 +1,20 @@
 import React from 'react';
 import {GlobalStyle} from "../../GlobalStyles";
-import { Text} from "@chakra-ui/react";
+import {UserCard} from "../../Container";
 
 const Home = () => {
-
     return (
         <>
             <GlobalStyle.PageContainer>
-                <Text color={'black'}>Asd</Text>
+                <GlobalStyle.HomePageContainer>
+                    <GlobalStyle.HomePageOptionContainer>
+                    </GlobalStyle.HomePageOptionContainer>
+                    <GlobalStyle.HomePageCardContainer mb={10}>
+                        <UserCard/>
+                        <UserCard/>
+                        <UserCard/>
+                    </GlobalStyle.HomePageCardContainer>
+                </GlobalStyle.HomePageContainer>
             </GlobalStyle.PageContainer>
         </>
     );
